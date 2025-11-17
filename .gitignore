@@ -1,0 +1,64 @@
+# Basic .gitignore for a Qt C++ project
+
+# Build directories
+/build/
+/bin/
+/out/
+*/build/
+*/out/
+
+# Object files, libraries, executables
+*.o
+*.obj
+*.lo
+*.la
+*.lai
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+*.dSYM/
+
+# Generated Qt files
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Qt Creator / Qt build files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+Makefile
+*.prl
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeScripts/
+CTestTestfile.cmake
+install_manifest.txt
+compile_commands.json
+build-*/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.kate-swp
+*~            # backup files
+*.swp
+*.tmp
+
+# Translation / Qt Linguist
+*.ts~
+*.qm
+
+# OS files
+.DS_Store
+Thumbs.db
+D1_2.pro.user
