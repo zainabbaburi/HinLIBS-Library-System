@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AccountWindow</class>
+ <widget class="QWidget" name="AccountWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>My Account</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <!-- User Info Section -->
+    <widget class="QWidget" name="userInfoWidget">
+     <layout class="QVBoxLayout" name="verticalLayout_userInfo">
+      <item>
+       <widget class="QLabel" name="userNameLabel">
+        <property name="text">
+         <string>Welcome, User!</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 18px; font-weight: bold; padding: 10px;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="userEmailLabel">
+        <property name="text">
+         <string>Email: user@example.com</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">padding-left: 10px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <!-- Checked Out Items Section -->
+    <widget class="QLabel" name="checkedOutCountLabel">
+     <property name="text">
+      <string>Checked Out Items (0)</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 14px; font-weight: bold; padding: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="checkedOutListWidget">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <!-- Holds Section -->
+    <widget class="QLabel" name="holdsCountLabel">
+     <property name="text">
+      <string>Holds (0)</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 14px; font-weight: bold; padding: 5px;</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="holdsListWidget">
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
