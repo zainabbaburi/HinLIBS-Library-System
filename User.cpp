@@ -35,7 +35,7 @@ Patron::Patron(const std::string& id,
     , email(email)
     , numLoans(0)
     , numHolds(0)
-    , amountOwed(0.0)
+    , fineAmount(0.0)
 {
 }
 
