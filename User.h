@@ -48,6 +48,7 @@ private:
     std::string email;
     int numLoans;
     int numHolds;
+    double amountOwed = 0.0;
 
 public:
     Patron(const std::string& id,
